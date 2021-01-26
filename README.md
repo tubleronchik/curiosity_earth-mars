@@ -1,4 +1,4 @@
-# HOWTO: Robonomics demo with Curiosity Rover moving after transaction and storing data in blockchain
+# HOWTO: Robonomics demo with Curiosity Rover moving after transaction and storing data in IPFS
 Sample of how it works is available on YT: https://youtu.be/pl3eIEC_T2o
 ### Requirements:
 - ROS Melodic + Gazebo + RViz (installation manual [here](http://wiki.ros.org/melodic/Installation))
@@ -57,7 +57,7 @@ To download a controller package for Rover type in terminal:
 cd ~/robonomics_ws/src
 mkdir robonomics_sample_controller
 cd robonomics_sample_controller
-git clone https://github.com/PaTara43/robonomics_sample_controller
+git clone https://github.com/tubleronchik/curiosity_earth-mars.git
 cd ../..
 catkin build
 ```
@@ -65,17 +65,6 @@ catkin build
 ------------
 
 ### 3. Manage accounts in DAPP
-Since we are testing, let us create a local robonomics network with robonomics binary file:
-```shell
-./robonomics --dev --rpc-cors all
-```
-
-
-**Important!** Before next launches it is necessary to remove a directory `db` with
-
-`rm -rf /home/$USER/.local/share/robonomics/chains/dev/db`
-
-
 
 ![Robonomics node](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2018-21-52.png?raw=true "Robonomics node")
 
