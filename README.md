@@ -69,7 +69,7 @@ catkin build
 
 Go to https://parachain.robonomics.network and switch to Earth Test Network
 
-![Local node](https://wiki.robonomics.network/assets/static/robonomics-dapp-connect-local.09c0af9.8bb6632a8836118ad6b6049d0852c1eb.jpg "Local node")
+![Earth](https://github.com/tubleronchik/curiosity_earth-mars/blob/main/media/networks.png "Earth")
 
 Go to Accounts and create **EMPLOYER** account. 
 
@@ -104,7 +104,10 @@ rosrun robonomics_sample_controller sample_controller.py
 
 Now you can send a transaction triggering the Rover to start moving and collecting data. To do so, go to the Earth network in https://parachain.robonomics.network and open Developer - Extrinsics. 
 
-Fill in the form same as on the picture below.   
+Fill in the form same as on the picture below. 
+
+
+![Form](https://github.com/tubleronchik/curiosity_earth-mars/blob/main/media/form.png "Form")
 
 
 You should see the following:
