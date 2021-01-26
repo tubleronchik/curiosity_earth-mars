@@ -66,28 +66,24 @@ catkin build
 
 ### 3. Manage accounts in DAPP
 
-![Robonomics node](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2018-21-52.png?raw=true "Robonomics node")
 
-Go to https://parachain.robonomics.network and switch to local node 
+Go to https://parachain.robonomics.network and switch to Earth Test Network
 
 ![Local node](https://wiki.robonomics.network/assets/static/robonomics-dapp-connect-local.09c0af9.8bb6632a8836118ad6b6049d0852c1eb.jpg "Local node")
 
-Go to Accounts and create **CURIOSITY** and **EMPLOYER** accounts (**NOT_CURIOSITY** is **not** necessary)
+Go to Accounts and create **EMPLOYER** account. 
+
+Then switch to Mars Test Network and create and **CURIOSITY** account (**NOT_CURIOSITY** is **not** necessary).
 
 **Important**! Copy each account's key and address (to copy address click on account's icon)
 Transfer some money (units) to these accounts
 
-![Add Account](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2018-27-47.png?raw=true "Add Account")
-
-![Balances](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2018-33-14.png?raw=true "Balances")
-
-Add these addresses and path to robonomics folder to file `config.config` in `robonomics_ws/src/robonomics_sample_controller/src`
+Add these addresses and path to robonomics folder to file `config.config` in `robonomics_ws/src/robonomics_sample_controller/src`. The template for the config is in `config-template.config`.
 
 ------------
 
 
 ### 4. Start Robonomics
-Up to now the **only thing running** should be the robonomics local node
 In a separate terminal launch IPFS:
 ```shell
 ifps init #you only need to do this once
@@ -106,11 +102,10 @@ rosrun robonomics_sample_controller sample_controller.py
 ```
 ![Running controller](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2018-46-30.png?raw=true "Running controller")
 
-Now you can send a transaction triggering the Rover to start moving and collecting data. To do so, you should use the [Robonomics IO](https://wiki.robonomics.network/docs/rio-overview/) subcommand of robonomics binary file:
-```shell
-echo "ON" | ./robonomics io write launch -r <CURIOSITY ADDRESS> -s <EMPLOYER’S KEY>
-```
-Where `<CURIOSITY ADDRESS>`  and `<EMPLOYER’S KEY>` are replaced with  previously saved strings accordingly
+Now you can send a transaction triggering the Rover to start moving and collecting data. To do so, go to the Earth network in https://parachain.robonomics.network and open Developer - Extrinsics. 
+
+Fill in the form same as on the picture below.   
+
 
 You should see the following:
 
@@ -118,18 +113,6 @@ You should see the following:
 
 And the robot should start moving. Later, when the job is done:
 
-![Done](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2019-10-43.png?raw=true "Done")
 
-On the Robonomics portal go to Developer -> Chain state and add a CURIOSITY datalog using “+” button with selected “datalog” as state query: 
-
-![Datalog](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2019-16-49.png?raw=true "Datalog")
-
-Now the IPFS hash of the telemetry is saved in the blockchain. To see the data simply copy the hash and insert it in IPFS Companion:
-
-![IPFS](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2019-18-58.png?raw=true "IPFS")
-
-Click Explore -> View on Gateway and voila!
-
-![Voila](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2019-20-01.png?raw=true "Voila")
 
 
