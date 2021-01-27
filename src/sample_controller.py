@@ -89,12 +89,6 @@ class Robot(threading.Thread):
         res = client.add(dirname + '/file_states.txt')
         rospy.loginfo("Pushed, the IPFS hash is " + res.values()[0].encode('utf8'))
 
-        # rospy.loginfo("Publishing IPFS hash to chain")
-        # program = "echo \"" + res.values()[0].encode('utf8') + "\" | " + configParser.get('keys_and_addresses', 'ROBONOMICS_DIR') + "/robonomics io write datalog -s " + configParser.get('keys_and_addresses', 'CURIOSITY_KEY')
-        # process = subprocess.Popen(program, shell=True, stdout=subprocess.PIPE)
-        # output = process.stdout.readline()
-        # rospy.loginfo("Published to chain! Transaction hash is " + output.strip())
-        # rospy.loginfo("Job Done. Check DAPP for IPFS data hash")
 
 
     def callback_wheel_state(self, data):

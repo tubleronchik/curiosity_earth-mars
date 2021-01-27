@@ -73,7 +73,7 @@ Go to https://parachain.robonomics.network and switch to Earth Test Network
 
 Go to Accounts and create **EMPLOYER** account. 
 
-Then switch to Mars Test Network and create and **CURIOSITY** account (**NOT_CURIOSITY** is **not** necessary).
+Then switch to Mars Test Network and create and **CURIOSITY** account (**NOT_CURIOSITY** is **not** necessary). Don't forget to turn off "only  this network" as below. 
 
 **Important**! Copy each account's key and address (to copy address click on account's icon)
 Transfer some money (units) to these accounts
