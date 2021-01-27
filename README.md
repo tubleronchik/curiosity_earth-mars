@@ -1,5 +1,5 @@
-# HOWTO: Robonomics demo with Curiosity Rover moving after transaction and storing data in IPFS
-Sample of how it works is available on YT: https://youtu.be/pl3eIEC_T2o
+# HOWTO: Robonomics demo with Curiosity Rover moving after XCM and storing data in IPFS
+Simulation scripts are based on the [Robonomics Sample Controller](https://github.com/PaTara43/robonomics_sample_controller)
 ### Requirements:
 - ROS Melodic + Gazebo + RViz (installation manual [here](http://wiki.ros.org/melodic/Installation))
 - extra packages:
