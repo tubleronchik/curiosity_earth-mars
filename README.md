@@ -75,6 +75,8 @@ Go to Accounts and create **EMPLOYER** account.
 
 Then switch to Mars Test Network and create and **CURIOSITY** account (**NOT_CURIOSITY** is **not** necessary). Don't forget to turn off "only  this network" as below. 
 
+![Netw](https://github.com/tubleronchik/curiosity_earth-mars/blob/main/media/only-this-net.png "Netw")
+
 **Important**! Copy each account's key and address (to copy address click on account's icon)
 Transfer some money (units) to these accounts
 
@@ -115,6 +117,9 @@ You should see the following:
 ![Arming](https://github.com/PaTara43/media/blob/master/Screenshot%20from%202020-08-27%2018-58-36.png?raw=true "Arming")
 
 And the robot should start moving. Later, when the job is done:
+
+![Finall](https://github.com/tubleronchik/curiosity_earth-mars/blob/main/media/finall.png "Finall")
+
 
 
 
